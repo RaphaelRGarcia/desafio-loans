@@ -1,11 +1,12 @@
 package com.loans.loans.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.loans.loans.Model.Loan;
 import com.loans.loans.Model.Offers;
-import com.loans.loans.domain.User.Costumer;
 
 @Service
 public class OffersServices {
@@ -13,7 +14,8 @@ public class OffersServices {
     @Autowired
     CostumerServices costumerServices;
 
-    public Offers createOffer(Costumer costumer,Loan loan){
-
+    public Offers createOffer(String costumer,List<Loan> loans){
+        Offers newOffer = new Offers(costumer,loans);
+        return newOffer;
     }
 }

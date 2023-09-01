@@ -11,5 +11,5 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Loan {
     private String type;
-    private BigDecimal interest_rate;
+    private int interest_rate;
 }
