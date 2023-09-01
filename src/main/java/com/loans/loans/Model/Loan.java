@@ -1,7 +1,5 @@
 package com.loans.loans.Model;
 
-import java.math.BigDecimal;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
