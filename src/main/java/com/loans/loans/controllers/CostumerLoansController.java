@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/costumer-loans")
-public class CostumerLoans {
+public class CostumerLoansController {
     @PostMapping
     public ResponseEntity<Offers> postMethodName(@RequestBody CostumerDTO data) {
         //Função em progresso
