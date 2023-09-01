@@ -11,7 +11,7 @@ import java.util.List;
 
 public interface CostumerRepository extends JpaRepository<Costumer,UUID>{
     
-    Optional<Costumer> findByCpf(String cpf);
+    Optional<Costumer> findCostumerByCpf(String cpf);
 
-    List<Costumer> findAll();
+    List<Costumer> getAllCostumers();
 }
